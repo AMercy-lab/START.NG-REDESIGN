@@ -1,0 +1,222 @@
+/* Brand tokens copied from start.ng's stylesheet (light and dark). */
+:root {
+  --bg: #f6f5ee;
+  --card: #fffefa;
+  --ink: #292a23;
+  --muted: #6b6c63;
+  --line: #e4e2d6;
+  --lime: #d8fd71;
+  --text-2: #3c3d35;
+  --on-solid: #fff;
+  --on-solid-accent: var(--lime);
+  --on-lime: #292a23;
+  --solid-hover: #000;
+  --code-bg: #292a23;
+  --banner-tint: #f1fbd2;
+  --dot: rgba(41, 42, 35, 0.16);
+  --shimmer: #efede2;
+  --r-common: #75766c;
+  --r-uncommon: #278546;
+  --r-rare: #346fdf;
+  --r-epic: #8e4fd6;
+  --r-legendary: #a9630a;
+  --r-limited: #db2967;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #292a23;
+  --card: #33342c;
+  --ink: #f6f5ee;
+  --muted: #b0b1a6;
+  --line: #4a4b41;
+  --text-2: #dedcd0;
+  --on-solid: #292a23;
+  --on-solid-accent: #292a23;
+  --solid-hover: #fff;
+  --code-bg: #1f201b;
+  --banner-tint: #343b27;
+  --dot: rgba(246, 245, 238, 0.12);
+  --shimmer: #44453b;
+  --r-common: #a6a79b;
+  --r-uncommon: #5fcf82;
+  --r-rare: #6f9bf0;
+  --r-epic: #b383ef;
+  --r-legendary: #f5a640;
+  --r-limited: #f27aa3;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #292a23;
+    --card: #33342c;
+    --ink: #f6f5ee;
+    --muted: #b0b1a6;
+    --line: #4a4b41;
+    --text-2: #dedcd0;
+    --on-solid: #292a23;
+    --on-solid-accent: #292a23;
+    --solid-hover: #fff;
+    --code-bg: #1f201b;
+    --banner-tint: #343b27;
+    --dot: rgba(246, 245, 238, 0.12);
+    --shimmer: #44453b;
+    --r-common: #a6a79b;
+    --r-uncommon: #5fcf82;
+    --r-rare: #6f9bf0;
+    --r-epic: #b383ef;
+    --r-legendary: #f5a640;
+    --r-limited: #f27aa3;
+    color-scheme: dark;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--bg);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--lime);
+  border-radius: 6px;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  background: var(--lime);
+  color: var(--on-lime);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 100;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--ink);
+  color: var(--on-solid);
+  font-weight: 700;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Buttons: start.ng's ink pill and white ghost. Pressing sinks into the lime shadow. */
+.btn {
+  --press: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: 10px;
+  border: 1.5px solid var(--ink);
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.18s var(--ease-out), box-shadow 0.18s var(--ease-out), background-color 0.2s;
+  box-shadow: 4px 4px 0 var(--lime);
+}
+.btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--lime);
+}
+.btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 var(--lime);
+  transition-duration: 0.06s;
+}
+.btn-solid {
+  background: var(--ink);
+  color: var(--on-solid);
+}
+.btn-solid:hover {
+  background: var(--solid-hover);
+}
+.btn-ghost {
+  background: var(--card);
+  color: var(--ink);
+  border-color: var(--line);
+  box-shadow: 0 0 0 var(--lime);
+}
+.btn-ghost:hover {
+  border-color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+  .btn:hover,
+  .btn:active {
+    transform: none;
+  }
+}

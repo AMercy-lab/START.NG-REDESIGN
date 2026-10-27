@@ -1,0 +1,1927 @@
+{
+  "fetched_at": "2026-10-27T11:39:10.851Z",
+  "total_games": 188,
+  "most_played": [
+    "tesla-skyrun",
+    "downshaft",
+    "job-hunt",
+    "wheelie-wahala",
+    "danfo-make-way",
+    "flying-human",
+    "ember-dash",
+    "git-quest"
+  ],
+  "new_this_week": [
+    "bingo",
+    "quiz",
+    "ludo",
+    "whot",
+    "ayo",
+    "draughts",
+    "connect-4",
+    "tic-tac-toe",
+    "mango-rush-beta",
+    "lagos-apocalypto",
+    "tesla-skyrun"
+  ],
+  "games": [
+    {
+      "name": "bingo",
+      "url": "https://bingo.start.ng",
+      "by": "Hamzat",
+      "cover_url": "https://bingo.start.ng/cover.png?v=1793006979",
+      "description": "Host a bingo for up to 100 people, with the classic numbers or your own words. Everyone gets a private card, start.ng draws, and every claim is checked.",
+      "leaderboard": false
+    },
+    {
+      "name": "quiz",
+      "url": "https://quiz.start.ng",
+      "by": "Hamzat",
+      "cover_url": "https://quiz.start.ng/cover.png?v=1793006984",
+      "description": "Make a quiz and play it live with up to 100 people: share the code, answer on your own screen, and faster right answers score more. The server keeps score.",
+      "leaderboard": false
+    },
+    {
+      "name": "ludo",
+      "url": "https://ludo.start.ng",
+      "by": "Hamzat",
+      "cover_url": "https://ludo.start.ng/cover.png?v=1793002911",
+      "description": "Ludo for 2 to 4 players: roll a six to start, race your four tokens round the board, send rivals home. Play friends with a code or play bots; the server rolls the die and checks e…",
+      "leaderboard": false
+    },
+    {
+      "name": "whot",
+      "url": "https://whot.start.ng",
+      "by": "Hamzat",
+      "cover_url": "https://whot.start.ng/cover.png?v=1793002908",
+      "description": "Whot, the Nigerian card game, for 2 to 4 players. Play friends with a code, or play bots; the server deals, shuffles and checks every card, so nobody can peek or cheat.",
+      "leaderboard": false
+    },
+    {
+      "name": "ayo",
+      "url": "https://ayo.start.ng",
+      "by": "Hamzat",
+      "cover_url": "https://ayo.start.ng/cover.png?v=1793002905",
+      "description": "Ayo, the Yoruba seed game for two: sow your seeds round the board and capture pits of two or three. Play a friend with a link, find a match, or play the bot. The server keeps the…",
+      "leaderboard": false
+    },
+    {
+      "name": "draughts",
+      "url": "https://draughts.start.ng",
+      "by": "Hamzat",
+      "cover_url": "https://draughts.start.ng/cover.png?v=1793002902",
+      "description": "Draughts (English draughts, or checkers) on start.ng: captures are compulsory and kings move both ways. Play a friend with a link, find a match, or play the bot. The server checks…",
+      "leaderboard": false
+    },
+    {
+      "name": "connect-4",
+      "url": "https://connect-4.start.ng",
+      "by": "Hamzat",
+      "cover_url": "https://connect-4.start.ng/cover.png?v=1793002914",
+      "description": "Connect 4 on start.ng: drop discs to get four in a row. Play a friend with a link, find a match, or play the bot. The server checks every move.",
+      "leaderboard": false
+    },
+    {
+      "name": "tic-tac-toe",
+      "url": "https://tic-tac-toe.start.ng",
+      "by": "Hamzat",
+      "cover_url": "https://tic-tac-toe.start.ng/cover.png?v=1792999306",
+      "description": "Tic-tac-toe on start.ng: play a friend with a link, find a match, or play the bot. The server runs the rules, so nobody can cheat.",
+      "leaderboard": false
+    },
+    {
+      "name": "mango-rush-beta",
+      "url": "https://mango-rush-beta.start.ng",
+      "by": "Bonnke",
+      "cover_url": "https://mango-rush-beta.start.ng/cover.png?v=1793025092",
+      "description": "Mango Rush: ride the mango barge down the Lagos lagoon. Catch mangoes, dodge coconuts, last until midnight. A start.ng game.",
+      "leaderboard": true
+    },
+    {
+      "name": "lagos-apocalypto",
+      "url": "https://lagos-apocalypto.start.ng",
+      "by": "Aghogho",
+      "cover_url": "https://lagos-apocalypto.start.ng/cover.png?v=1792746553",
+      "description": "A zombie survival game set in Lagos. It begins at 8:11 a.m. Fiction. Play it on start.ng.",
+      "leaderboard": false
+    },
+    {
+      "name": "tesla-skyrun",
+      "url": "https://tesla-skyrun.start.ng",
+      "by": "Favour",
+      "cover_url": "https://tesla-skyrun.start.ng/cover.png?v=1792500744",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "jollof-rush-3d",
+      "url": "https://jollof-rush-3d.start.ng",
+      "by": "Rebecca",
+      "cover_url": "https://jollof-rush-3d.start.ng/cover.png?v=1792482964",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "suomi-sniper",
+      "url": "https://suomi-sniper.start.ng",
+      "by": "Salako",
+      "cover_url": "https://suomi-sniper.start.ng/cover.png?v=1792468773",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "cork-fc",
+      "url": "https://cork-fc.start.ng",
+      "by": "prinuel",
+      "cover_url": "https://cork-fc.start.ng/cover.png?v=1792446343",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "temple-runner",
+      "url": "https://temple-runner.start.ng",
+      "by": "Elsie",
+      "cover_url": "https://temple-runner.start.ng/cover.png?v=1792435354",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "danfo-make-way",
+      "url": "https://danfo-make-way.start.ng",
+      "by": "Okeke",
+      "cover_url": "https://danfo-make-way.start.ng/cover.jpg?v=1792447533",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "jollof-rush",
+      "url": "https://jollof-rush.start.ng",
+      "by": "Y_Aisha",
+      "cover_url": "https://jollof-rush.start.ng/cover.png?v=1792417076",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "neon-orchard",
+      "url": "https://neon-orchard.start.ng",
+      "by": "chinaza",
+      "cover_url": "https://neon-orchard.start.ng/cover.png?v=1792417075",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "testing-player-pick-me",
+      "url": "https://testing-player-pick-me.start.ng",
+      "by": "AI",
+      "cover_url": "https://testing-player-pick-me.start.ng/cover.png?v=1792417149",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "rain-bucket",
+      "url": "https://rain-bucket.start.ng",
+      "by": "Cheerful",
+      "cover_url": "https://rain-bucket.start.ng/cover.png?v=1792405611",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "cosmic-dash",
+      "url": "https://cosmic-dash.start.ng",
+      "by": "Sabhayor",
+      "cover_url": "https://cosmic-dash.start.ng/cover.png?v=1792406198",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "agege-rush",
+      "url": "https://agege-rush.start.ng",
+      "by": "Mustapha",
+      "cover_url": "https://agege-rush.start.ng/cover.png?v=1792398893",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "naija-market-hustle",
+      "url": "https://naija-market-hustle.start.ng",
+      "by": "MiKEY",
+      "cover_url": "https://naija-market-hustle.start.ng/cover.jpg?v=1792395262",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "lantern-isles",
+      "url": "https://lantern-isles.start.ng",
+      "by": "Elisha",
+      "cover_url": "https://lantern-isles.start.ng/cover.png?v=1792393802",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "star-dash-3d",
+      "url": "https://star-dash-3d.start.ng",
+      "by": "Nie",
+      "cover_url": "https://star-dash-3d.start.ng/cover.png?v=1792382514",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "jackpot",
+      "url": "https://jackpot.start.ng",
+      "by": "Alexin",
+      "cover_url": "https://jackpot.start.ng/cover.png?v=1792435381",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "murewa-gem-rush",
+      "url": "https://murewa-gem-rush.start.ng",
+      "by": "Meza",
+      "cover_url": "https://murewa-gem-rush.start.ng/cover.png?v=1792369854",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "gem-isle",
+      "url": "https://gem-isle.start.ng",
+      "by": "Song",
+      "cover_url": "https://gem-isle.start.ng/cover.png?v=1792369852",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "dreamy-lass",
+      "url": "https://dreamy-lass.start.ng",
+      "by": "Her",
+      "cover_url": "https://dreamy-lass.start.ng/cover.png?v=1792366224",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "space-rescue",
+      "url": "https://space-rescue.start.ng",
+      "by": "Chizoba",
+      "cover_url": "https://space-rescue.start.ng/cover.png?v=1792435417",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "style-sprint",
+      "url": "https://style-sprint.start.ng",
+      "by": "Sophia AI",
+      "cover_url": "https://style-sprint.start.ng/cover.png?v=1792373538",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "coin-dash-game",
+      "url": "https://coin-dash-game.start.ng",
+      "by": "Olubunmi",
+      "cover_url": "https://coin-dash-game.start.ng/cover.png?v=1792363811",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "sky-patrol",
+      "url": "https://sky-patrol.start.ng",
+      "by": "Joyboy",
+      "cover_url": "https://sky-patrol.start.ng/cover.png?v=1792443989",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "splash-course",
+      "url": "https://splash-course.start.ng",
+      "by": "Pauline",
+      "cover_url": "https://splash-course.start.ng/cover.png?v=1792373499",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "rooftop-rush",
+      "url": "https://rooftop-rush.start.ng",
+      "by": "Oluwafemi",
+      "cover_url": null,
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "echo-world-game",
+      "url": "https://echo-world-game.start.ng",
+      "by": "Ummi",
+      "cover_url": "https://echo-world-game.start.ng/cover.png?v=1792362372",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "skybund",
+      "url": "https://skybund.start.ng",
+      "by": "Tega",
+      "cover_url": "https://skybund.start.ng/cover.png?v=1792362370",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "suwe",
+      "url": "https://suwe.start.ng",
+      "by": "The Product Girlie",
+      "cover_url": "https://suwe.start.ng/cover.png?v=1792504401",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "nightfall-arena",
+      "url": "https://nightfall-arena.start.ng",
+      "by": "Joshua",
+      "cover_url": "https://nightfall-arena.start.ng/cover.png?v=1792371385",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "echo-grid-dan",
+      "url": "https://echo-grid-dan.start.ng",
+      "by": "Daniel",
+      "cover_url": "https://echo-grid-dan.start.ng/cover.png?v=1792482622",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "tower-tapper",
+      "url": "https://tower-tapper.start.ng",
+      "by": "David",
+      "cover_url": "https://tower-tapper.start.ng/cover.png?v=1792352814",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "buggy-bash-3d",
+      "url": "https://buggy-bash-3d.start.ng",
+      "by": "Omojuwa",
+      "cover_url": "https://buggy-bash-3d.start.ng/cover.png?v=1792356480",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "cyberpulse",
+      "url": "https://cyberpulse.start.ng",
+      "by": "Bilkis",
+      "cover_url": "https://cyberpulse.start.ng/cover.png?v=1792349212",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "tower-stack",
+      "url": "https://tower-stack.start.ng",
+      "by": "David",
+      "cover_url": "https://tower-stack.start.ng/cover.png?v=1792356431",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "word-market",
+      "url": "https://word-market.start.ng",
+      "by": "Arnold",
+      "cover_url": "https://word-market.start.ng/cover.png?v=1792345582",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "puff-puff-catch",
+      "url": "https://puff-puff-catch.start.ng",
+      "by": "Cee",
+      "cover_url": "https://puff-puff-catch.start.ng/cover.png?v=1792356429",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "danfo-defense",
+      "url": "https://danfo-defense.start.ng",
+      "by": "emmyanz",
+      "cover_url": "https://danfo-defense.start.ng/cover.png?v=1792341406",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "naija-roots",
+      "url": "https://naija-roots.start.ng",
+      "by": "Collins",
+      "cover_url": "https://naija-roots.start.ng/cover.png?v=1792373551",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "coin-quest",
+      "url": "https://coin-quest.start.ng",
+      "by": "Evangeli",
+      "cover_url": "https://coin-quest.start.ng/cover.png?v=1792338406",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "ile-ere",
+      "url": "https://ile-ere.start.ng",
+      "by": "Josh",
+      "cover_url": "https://ile-ere.start.ng/cover.webp?v=1792334743",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "zedu-dash",
+      "url": "https://zedu-dash.start.ng",
+      "by": "Ife",
+      "cover_url": "https://zedu-dash.start.ng/cover.png?v=1792331010",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "market-rush-neon",
+      "url": "https://market-rush-neon.start.ng",
+      "by": "Naya",
+      "cover_url": "https://market-rush-neon.start.ng/cover.png?v=1792345593",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "quantum-breaker",
+      "url": "https://quantum-breaker.start.ng",
+      "by": "HB",
+      "cover_url": "https://quantum-breaker.start.ng/cover.png?v=1792331014",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "gem-dash",
+      "url": "https://gem-dash.start.ng",
+      "by": "Francis",
+      "cover_url": "https://gem-dash.start.ng/cover.png?v=1792334802",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "ghost-on-the-loose",
+      "url": "https://ghost-on-the-loose.start.ng",
+      "by": "Denise",
+      "cover_url": "https://ghost-on-the-loose.start.ng/cover.png?v=1792334799",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "maths-escape",
+      "url": "https://maths-escape.start.ng",
+      "by": "Sadiq",
+      "cover_url": "https://maths-escape.start.ng/cover.png?v=1792331008",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "star-dash",
+      "url": "https://star-dash.start.ng",
+      "by": "Ajibade",
+      "cover_url": "https://star-dash.start.ng/startng-cover.webp?v=1792327720",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "pick-me",
+      "url": "https://pick-me.start.ng",
+      "by": "AI",
+      "cover_url": "https://pick-me.start.ng/cover.png?v=1792411281",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "star-catcher",
+      "url": "https://star-catcher.start.ng",
+      "by": "Harshita",
+      "cover_url": "https://star-catcher.start.ng/cover.png?v=1792323804",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "inkbreak",
+      "url": "https://inkbreak.start.ng",
+      "by": "henryuks",
+      "cover_url": "https://inkbreak.start.ng/cover.png?v=1793088584",
+      "description": "Inkbreak is an original ink arena shooter with Turf Clash and Squad Assault across four arenas.",
+      "leaderboard": true
+    },
+    {
+      "name": "noir-detective",
+      "url": "https://noir-detective.start.ng",
+      "by": "Divine",
+      "cover_url": "https://noir-detective.start.ng/cover.jpg?v=1792316525",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "neondrift-arcade",
+      "url": "https://neondrift-arcade.start.ng",
+      "by": "Garuba",
+      "cover_url": "https://neondrift-arcade.start.ng/cover.png?v=1792312878",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "flappy-run",
+      "url": "https://flappy-run.start.ng",
+      "by": "Jesse",
+      "cover_url": "https://flappy-run.start.ng/cover.png?v=1792303373",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "flying-human",
+      "url": "https://flying-human.start.ng",
+      "by": "Lagat",
+      "cover_url": "https://flying-human.start.ng/cover.png?v=1792302507",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "sunshade-dodger",
+      "url": "https://sunshade-dodger.start.ng",
+      "by": "daniel",
+      "cover_url": null,
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "boju-boju",
+      "url": "https://boju-boju.start.ng",
+      "by": "99PlusOne",
+      "cover_url": "https://boju-boju.start.ng/cover.png?v=1792338368",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "jemi-game-arcade",
+      "url": "https://jemi-game-arcade.start.ng",
+      "by": "Jemi",
+      "cover_url": "https://jemi-game-arcade.start.ng/cover.png?v=1792287546",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "salone-run",
+      "url": "https://salone-run.start.ng",
+      "by": "CMN",
+      "cover_url": "https://salone-run.start.ng/cover.png?v=1792366242",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "turbo-race",
+      "url": "https://turbo-race.start.ng",
+      "by": "Paul",
+      "cover_url": "https://turbo-race.start.ng/cover.png?v=1792320157",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "coin-rush-3d",
+      "url": "https://coin-rush-3d.start.ng",
+      "by": "Pearl",
+      "cover_url": "https://coin-rush-3d.start.ng/cover.png?v=1792283915",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "orbital-run",
+      "url": "https://orbital-run.start.ng",
+      "by": "Precious",
+      "cover_url": "https://orbital-run.start.ng/cover.png?v=1792280284",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "showball",
+      "url": "https://showball.start.ng",
+      "by": "Trust Emmanuel",
+      "cover_url": "https://showball.start.ng/cover.jpg?v=1792276698",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "circuit-racer",
+      "url": "https://circuit-racer.start.ng",
+      "by": "Bolu",
+      "cover_url": "https://circuit-racer.start.ng/cover.png?v=1792276714",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "horsebound-endless-derby",
+      "url": "https://horsebound-endless-derby.start.ng",
+      "by": "Emmanuel",
+      "cover_url": "https://horsebound-endless-derby.start.ng/cover.png?v=1792276689",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "naija-relic-hunter",
+      "url": "https://naija-relic-hunter.start.ng",
+      "by": "Solomon",
+      "cover_url": "https://naija-relic-hunter.start.ng/cover.jpg?v=1792628845",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "lagos-bike-rush",
+      "url": "https://lagos-bike-rush.start.ng",
+      "by": "OBA",
+      "cover_url": "https://lagos-bike-rush.start.ng/cover.png?v=1792309258",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "portal-pals",
+      "url": "https://portal-pals.start.ng",
+      "by": "Maryam",
+      "cover_url": "https://portal-pals.start.ng/cover.png?v=1792331019",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "sneaky-squad",
+      "url": "https://sneaky-squad.start.ng",
+      "by": "Nae",
+      "cover_url": "https://sneaky-squad.start.ng/startng-cover.webp?v=1792269210",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "neon-brick-break",
+      "url": "https://neon-brick-break.start.ng",
+      "by": "Jamal",
+      "cover_url": "https://neon-brick-break.start.ng/cover.jpg?v=1792267635",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "penalty-kings-3d",
+      "url": "https://penalty-kings-3d.start.ng",
+      "by": "BabaD",
+      "cover_url": "https://penalty-kings-3d.start.ng/cover.png?v=1792266877",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "cosmic-surge",
+      "url": "https://cosmic-surge.start.ng",
+      "by": "Uriel",
+      "cover_url": "https://cosmic-surge.start.ng/cover.png?v=1792266551",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "orb-frenzy",
+      "url": "https://orb-frenzy.start.ng",
+      "by": "Rabiah",
+      "cover_url": "https://orb-frenzy.start.ng/cover.png?v=1792265342",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "bug-escape",
+      "url": "https://bug-escape.start.ng",
+      "by": "Timothy",
+      "cover_url": "https://bug-escape.start.ng/cover.png?v=1792263476",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "naija-quickfire",
+      "url": "https://naija-quickfire.start.ng",
+      "by": "Adele",
+      "cover_url": "https://naija-quickfire.start.ng/cover.png?v=1792259758",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "coin-dash-runner",
+      "url": "https://coin-dash-runner.start.ng",
+      "by": "Ejike",
+      "cover_url": "https://coin-dash-runner.start.ng/cover.png?v=1792257927",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "nepa-light-up-lagos",
+      "url": "https://nepa-light-up-lagos.start.ng",
+      "by": "Oluwasanmi",
+      "cover_url": "https://nepa-light-up-lagos.start.ng/cover.png?v=1792334757",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "the-lost-library",
+      "url": "https://the-lost-library.start.ng",
+      "by": "Gracie",
+      "cover_url": "https://the-lost-library.start.ng/cover.png?v=1792366238",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "dont-spill-the-soup",
+      "url": "https://dont-spill-the-soup.start.ng",
+      "by": "Umar",
+      "cover_url": null,
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "mami",
+      "url": "https://mami.start.ng",
+      "by": "Jubril",
+      "cover_url": "https://mami.start.ng/cover.png?v=1792247495",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "shard-survival",
+      "url": "https://shard-survival.start.ng",
+      "by": "Peter",
+      "cover_url": "https://shard-survival.start.ng/cover.png?v=1792247177",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "platformer-hopper",
+      "url": "https://platformer-hopper.start.ng",
+      "by": "Dhozie",
+      "cover_url": "https://platformer-hopper.start.ng/cover.png?v=1792246989",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "bullseye-archery",
+      "url": "https://bullseye-archery.start.ng",
+      "by": "Spider",
+      "cover_url": "https://bullseye-archery.start.ng/cover.png?v=1792253953",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "jollof-catch",
+      "url": "https://jollof-catch.start.ng",
+      "by": "Akintomiwa",
+      "cover_url": "https://jollof-catch.start.ng/cover.png?v=1792250678",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "ayo-arena",
+      "url": "https://ayo-arena.start.ng",
+      "by": "mar",
+      "cover_url": "https://ayo-arena.start.ng/cover.png?v=1792364306",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "zobo-sort",
+      "url": "https://zobo-sort.start.ng",
+      "by": "Aishajoda",
+      "cover_url": "https://zobo-sort.start.ng/cover.png?v=1792243902",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "naija-drafts",
+      "url": "https://naija-drafts.start.ng",
+      "by": "Aniyikaye",
+      "cover_url": "https://naija-drafts.start.ng/cover.png?v=1792243101",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "ember-dash",
+      "url": "https://ember-dash.start.ng",
+      "by": "Soludo",
+      "cover_url": "https://ember-dash.start.ng/cover.png?v=1792621586",
+      "description": "Ember Dash is an endless lava-runner on start.ng. Flee the eruption, leap the gaps, slide under the arches and grab every crystal with your own start.ng character.",
+      "leaderboard": true
+    },
+    {
+      "name": "perihelion",
+      "url": "https://perihelion.start.ng",
+      "by": "Bishop",
+      "cover_url": "https://perihelion.start.ng/cover.png?v=1792239722",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "agent-protocol",
+      "url": "https://agent-protocol.start.ng",
+      "by": "Fabbenco",
+      "cover_url": "https://agent-protocol.start.ng/cover.png?v=1792398950",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "star-dodge-by-jeffersdoherty",
+      "url": "https://star-dodge-by-jeffersdoherty.start.ng",
+      "by": "Jeffers",
+      "cover_url": "https://star-dodge-by-jeffersdoherty.start.ng/cover.png?v=1792243429",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "whimsy-wick",
+      "url": "https://whimsy-wick.start.ng",
+      "by": "Kanyinsola",
+      "cover_url": "https://whimsy-wick.start.ng/startng-cover.webp?v=1792852828",
+      "description": "Whimsy Wick, a cozy magical platformer set in a sleeping kitchen. Guide Ghee, gather coins and gems, and light every wick.",
+      "leaderboard": true
+    },
+    {
+      "name": "cloud-courier",
+      "url": "https://cloud-courier.start.ng",
+      "by": "wisdom",
+      "cover_url": "https://cloud-courier.start.ng/cover.png?v=1792352818",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "budget-panic",
+      "url": "https://budget-panic.start.ng",
+      "by": "Envy_Boop",
+      "cover_url": "https://budget-panic.start.ng/cover.png?v=1792698534",
+      "description": "A fast, funny market-survival game for start.ng. You have a recipe to cook, a small budget, and prices that keep moving. Haggle with traders, dodge pickpockets, survive market cha…",
+      "leaderboard": false
+    },
+    {
+      "name": "sky-courier",
+      "url": "https://sky-courier.start.ng",
+      "by": "Cypher",
+      "cover_url": "https://sky-courier.start.ng/cover.png?v=1792228815",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "robot-dodge",
+      "url": "https://robot-dodge.start.ng",
+      "by": "kenneth",
+      "cover_url": "https://robot-dodge.start.ng/cover.png?v=1792226769",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "onithsa-market-run",
+      "url": "https://onithsa-market-run.start.ng",
+      "by": "Nwabueze Jeremiah Nwite",
+      "cover_url": "https://onithsa-market-run.start.ng/cover.png?v=1792254293",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "orb-rush-mando",
+      "url": "https://orb-rush-mando.start.ng",
+      "by": "Michael",
+      "cover_url": "https://orb-rush-mando.start.ng/cover.png?v=1792223743",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "glam-dash",
+      "url": "https://glam-dash.start.ng",
+      "by": "Mercy",
+      "cover_url": "https://glam-dash.start.ng/cover.png?v=1792312885",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "bloom-circuit",
+      "url": "https://bloom-circuit.start.ng",
+      "by": "Felix",
+      "cover_url": "https://bloom-circuit.start.ng/cover.png?v=1792224617",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "coin-rush",
+      "url": "https://coin-rush.start.ng",
+      "by": "Daniel",
+      "cover_url": "https://coin-rush.start.ng/cover.png?v=1792224550",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "junction-spirit",
+      "url": "https://junction-spirit.start.ng",
+      "by": "Nurudeen",
+      "cover_url": "https://junction-spirit.start.ng/cover.jpg?v=1792217102",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "riftsync",
+      "url": "https://riftsync.start.ng",
+      "by": "YUSUF",
+      "cover_url": "https://riftsync.start.ng/cover.png?v=1792291160",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "bounce-game",
+      "url": "https://bounce-game.start.ng",
+      "by": "Emmanuel",
+      "cover_url": "https://bounce-game.start.ng/cover.png?v=1792202166",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "crowd-control",
+      "url": "https://crowd-control.start.ng",
+      "by": "Dave",
+      "cover_url": "https://crowd-control.start.ng/cover.png?v=1792199802",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "nebula-dash",
+      "url": "https://nebula-dash.start.ng",
+      "by": "Oby",
+      "cover_url": "https://nebula-dash.start.ng/cover.png?v=1792198064",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "starfall-neon-survival",
+      "url": "https://starfall-neon-survival.start.ng",
+      "by": "Donald",
+      "cover_url": "https://starfall-neon-survival.start.ng/cover.png?v=1792197790",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "sharp-sharp",
+      "url": "https://sharp-sharp.start.ng",
+      "by": "Eddy",
+      "cover_url": "https://sharp-sharp.start.ng/cover.png?v=1792257929",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "relic-rush",
+      "url": "https://relic-rush.start.ng",
+      "by": "Daniel",
+      "cover_url": "https://relic-rush.start.ng/cover.jpg?v=1792199197",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "volcano",
+      "url": "https://volcano.start.ng",
+      "by": "Jose",
+      "cover_url": "https://volcano.start.ng/cover.png?v=1792194164",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "star-sprint",
+      "url": "https://star-sprint.start.ng",
+      "by": "satar",
+      "cover_url": "https://star-sprint.start.ng/cover.png?v=1792194761",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "follow-follow",
+      "url": "https://follow-follow.start.ng",
+      "by": "kim",
+      "cover_url": "https://follow-follow.start.ng/cover.png?v=1792236520",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "harrington-mystery",
+      "url": "https://harrington-mystery.start.ng",
+      "by": "faith",
+      "cover_url": "https://harrington-mystery.start.ng/cover.png?v=1792199207",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "relic-rush-3d",
+      "url": "https://relic-rush-3d.start.ng",
+      "by": "Noble",
+      "cover_url": "https://relic-rush-3d.start.ng/cover.png?v=1792320165",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "job-hunt",
+      "url": "https://job-hunt.start.ng",
+      "by": "Raji",
+      "cover_url": "https://job-hunt.start.ng/startng-cover.webp?v=1792208405",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "archery-master",
+      "url": "https://archery-master.start.ng",
+      "by": "David",
+      "cover_url": "https://archery-master.start.ng/cover.png?v=1792186761",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "lagos-hustle",
+      "url": "https://lagos-hustle.start.ng",
+      "by": "Kelvo",
+      "cover_url": "https://lagos-hustle.start.ng/cover.png?v=1792348628",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "coin-dash",
+      "url": "https://coin-dash.start.ng",
+      "by": "Chinenye",
+      "cover_url": "https://coin-dash.start.ng/cover.png?v=1792185673",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "orbit-orchard",
+      "url": "https://orbit-orchard.start.ng",
+      "by": "khay",
+      "cover_url": "https://orbit-orchard.start.ng/cover.png?v=1792188828",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "kingpin-arena",
+      "url": "https://kingpin-arena.start.ng",
+      "by": "Ayo",
+      "cover_url": null,
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "lagos-market-run",
+      "url": "https://lagos-market-run.start.ng",
+      "by": "Michelle",
+      "cover_url": "https://lagos-market-run.start.ng/cover.png?v=1792356977",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "git-quest",
+      "url": "https://git-quest.start.ng",
+      "by": "Belemote",
+      "cover_url": "https://git-quest.start.ng/cover.png?v=1792265250",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "flood-rise",
+      "url": "https://flood-rise.start.ng",
+      "by": "Josh",
+      "cover_url": "https://flood-rise.start.ng/cover.png?v=1792182323",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "along",
+      "url": "https://along.start.ng",
+      "by": "Yolanda",
+      "cover_url": "https://along.start.ng/cover.png?v=1792184663",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "city-hustle-lagos",
+      "url": "https://city-hustle-lagos.start.ng",
+      "by": "Daniel",
+      "cover_url": "https://city-hustle-lagos.start.ng/cover.png?v=1792181628",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "startng-city-dash",
+      "url": "https://startng-city-dash.start.ng",
+      "by": "Zee",
+      "cover_url": "https://startng-city-dash.start.ng/cover.png?v=1792356416",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "star-runner-3d",
+      "url": "https://star-runner-3d.start.ng",
+      "by": "mayowa",
+      "cover_url": "https://star-runner-3d.start.ng/cover.png?v=1792178400",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "wheelie-wahala",
+      "url": "https://wheelie-wahala.start.ng",
+      "by": "bobbysam",
+      "cover_url": "https://wheelie-wahala.start.ng/cover.png?v=1792525758",
+      "description": "A 3D stunt bike racer for start.ng. Flip, loop and race across the desert as your own start.ng character.",
+      "leaderboard": true
+    },
+    {
+      "name": "mama-put-rush",
+      "url": "https://mama-put-rush.start.ng",
+      "by": "Stephen",
+      "cover_url": "https://mama-put-rush.start.ng/cover.png?v=1792500751",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "pulse-runner",
+      "url": "https://pulse-runner.start.ng",
+      "by": "Pulse Analytics",
+      "cover_url": "https://pulse-runner.start.ng/cover.png?v=1792268851",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "glide",
+      "url": "https://glide.start.ng",
+      "by": "dev_elixir",
+      "cover_url": "https://glide.start.ng/cover.png?v=1792195567",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "startverse-neon-rush",
+      "url": "https://startverse-neon-rush.start.ng",
+      "by": "Divine",
+      "cover_url": "https://startverse-neon-rush.start.ng/cover.png?v=1792224609",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "3d-coin-collector",
+      "url": "https://3d-coin-collector.start.ng",
+      "by": "Pleasure",
+      "cover_url": "https://3d-coin-collector.start.ng/cover.png?v=1792184679",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "orb-temple",
+      "url": "https://orb-temple.start.ng",
+      "by": "aphoe",
+      "cover_url": "https://orb-temple.start.ng/startng-cover.webp?v=1792174705",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "go-slow-danfo",
+      "url": "https://go-slow-danfo.start.ng",
+      "by": "Oyetoke",
+      "cover_url": "https://go-slow-danfo.start.ng/cover.png?v=1792195568",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "neondrift",
+      "url": "https://neondrift.start.ng",
+      "by": "Ezekiel",
+      "cover_url": "https://neondrift.start.ng/cover.png?v=1792170030",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "arcade-hub",
+      "url": "https://arcade-hub.start.ng",
+      "by": "HB",
+      "cover_url": "https://arcade-hub.start.ng/cover.png?v=1792196205",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "oven-rush",
+      "url": "https://oven-rush.start.ng",
+      "by": "Hassanat",
+      "cover_url": "https://oven-rush.start.ng/cover.png?v=1792168355",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "coin-dash-arena",
+      "url": "https://coin-dash-arena.start.ng",
+      "by": "snow",
+      "cover_url": "https://coin-dash-arena.start.ng/cover.png?v=1792395269",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "iso-scrap",
+      "url": "https://iso-scrap.start.ng",
+      "by": "Abdulmuiz",
+      "cover_url": "https://iso-scrap.start.ng/cover.png?v=1792165655",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "orbit-run",
+      "url": "https://orbit-run.start.ng",
+      "by": "Nike",
+      "cover_url": "https://orbit-run.start.ng/cover.png?v=1792173795",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "dusk-stack",
+      "url": "https://dusk-stack.start.ng",
+      "by": "Eddy",
+      "cover_url": "https://dusk-stack.start.ng/cover.png?v=1792162511",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "coconut-dodge",
+      "url": "https://coconut-dodge.start.ng",
+      "by": "Fawazbky",
+      "cover_url": "https://coconut-dodge.start.ng/cover.png?v=1792930775",
+      "description": "The palms are dropping coconuts. Dodge them as your own start.ng character, chain coins for x2 and x3, and survive as long as you can.",
+      "leaderboard": true
+    },
+    {
+      "name": "alley-velocity",
+      "url": "https://alley-velocity.start.ng",
+      "by": "Monarch",
+      "cover_url": "https://alley-velocity.start.ng/cover.png?v=1792166516",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "lagos-crossing",
+      "url": "https://lagos-crossing.start.ng",
+      "by": "Senior",
+      "cover_url": "https://lagos-crossing.start.ng/cover.png?v=1792417086",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "gidi-hop",
+      "url": "https://gidi-hop.start.ng",
+      "by": "Oluwayoyinsola",
+      "cover_url": "https://gidi-hop.start.ng/cover.png?v=1792184660",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "neon-drift",
+      "url": "https://neon-drift.start.ng",
+      "by": "Miracle",
+      "cover_url": "https://neon-drift.start.ng/cover.png?v=1792154065",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "glitter-rain",
+      "url": "https://glitter-rain.start.ng",
+      "by": "Mercy",
+      "cover_url": "https://glitter-rain.start.ng/cover.png?v=1792159179",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "okada-dodge",
+      "url": "https://okada-dodge.start.ng",
+      "by": "Abdul-Baaqi",
+      "cover_url": "https://okada-dodge.start.ng/cover.png?v=1792153623",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "cybertron-runner",
+      "url": "https://cybertron-runner.start.ng",
+      "by": "Nnachi",
+      "cover_url": "https://cybertron-runner.start.ng/cover.png?v=1792154996",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "streetpk-naija",
+      "url": "https://streetpk-naija.start.ng",
+      "by": "Salako",
+      "cover_url": "https://streetpk-naija.start.ng/cover.png?v=1792170244",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "sumo-bump",
+      "url": "https://sumo-bump.start.ng",
+      "by": "Mo-Zoe",
+      "cover_url": "https://sumo-bump.start.ng/cover.png?v=1792152478",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "sky-hopper",
+      "url": "https://sky-hopper.start.ng",
+      "by": "Joshua",
+      "cover_url": "https://sky-hopper.start.ng/cover.png?v=1792362423",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "balloon-funride",
+      "url": "https://balloon-funride.start.ng",
+      "by": "Agada",
+      "cover_url": "https://balloon-funride.start.ng/cover.png?v=1792155583",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "gem-rush",
+      "url": "https://gem-rush.start.ng",
+      "by": "Temitope",
+      "cover_url": "https://gem-rush.start.ng/cover.png?v=1792151285",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "neon-drift-arcade",
+      "url": "https://neon-drift-arcade.start.ng",
+      "by": "Covenant",
+      "cover_url": "https://neon-drift-arcade.start.ng/cover.png?v=1792154842",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "treasure-isle",
+      "url": "https://treasure-isle.start.ng",
+      "by": "Irfat",
+      "cover_url": "https://treasure-isle.start.ng/cover.png?v=1792150318",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "danfo",
+      "url": "https://danfo.start.ng",
+      "by": "Khalif",
+      "cover_url": "https://danfo.start.ng/cover.webp?v=1792147856",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "cyber-slash",
+      "url": "https://cyber-slash.start.ng",
+      "by": "Goodness",
+      "cover_url": "https://cyber-slash.start.ng/cover.png?v=1792147777",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "naija-penalty",
+      "url": "https://naija-penalty.start.ng",
+      "by": "Obi",
+      "cover_url": "https://naija-penalty.start.ng/cover.png?v=1792149447",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "naira-run",
+      "url": "https://naira-run.start.ng",
+      "by": "Oluwalayomi",
+      "cover_url": "https://naira-run.start.ng/cover.png?v=1792159188",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "arrow-escape",
+      "url": "https://arrow-escape.start.ng",
+      "by": "Irfat",
+      "cover_url": "https://arrow-escape.start.ng/cover.png?v=1792173780",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "forest-hunter",
+      "url": "https://forest-hunter.start.ng",
+      "by": "Tbrainyz",
+      "cover_url": "https://forest-hunter.start.ng/cover.png?v=1792673932",
+      "description": "Scope the forest, identify the animals, and bag the mission target before time or ammo runs out. Spare the protected wolves.",
+      "leaderboard": true
+    },
+    {
+      "name": "the-hooded-swordsman",
+      "url": "https://the-hooded-swordsman.start.ng",
+      "by": "Dave",
+      "cover_url": "https://the-hooded-swordsman.start.ng/startng-cover.webp?v=1792142552",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "lagos-run",
+      "url": "https://lagos-run.start.ng",
+      "by": "Enaye",
+      "cover_url": "https://lagos-run.start.ng/cover.png?v=1792202832",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "finding-mama",
+      "url": "https://finding-mama.start.ng",
+      "by": "Harrylever",
+      "cover_url": "https://finding-mama.start.ng/cover.png?v=1792137358",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "ghost-shift",
+      "url": "https://ghost-shift.start.ng",
+      "by": "Testing",
+      "cover_url": "https://ghost-shift.start.ng/cover.png?v=1792135759",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "mango-rush",
+      "url": "https://mango-rush.start.ng",
+      "by": "Bonnke",
+      "cover_url": "https://mango-rush.start.ng/startng-cover.webp?v=1792309989",
+      "description": "Mango Rush: ride the mango barge down the Lagos lagoon. Catch mangoes, dodge coconuts, last until midnight. A start.ng game.",
+      "leaderboard": true
+    },
+    {
+      "name": "owambe",
+      "url": "https://owambe.start.ng",
+      "by": "Victor",
+      "cover_url": "https://owambe.start.ng/cover.png?v=1792130889",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "market-dash",
+      "url": "https://market-dash.start.ng",
+      "by": "Michael Churchill",
+      "cover_url": "https://market-dash.start.ng/cover.png?v=1792148298",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "coin-catcher",
+      "url": "https://coin-catcher.start.ng",
+      "by": "Cynthy",
+      "cover_url": "https://coin-catcher.start.ng/cover.png?v=1792119822",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "downshaft",
+      "url": "https://downshaft.start.ng",
+      "by": "Prince",
+      "cover_url": "https://downshaft.start.ng/cover.png?v=1792119141",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "dead-signal",
+      "url": "https://dead-signal.start.ng",
+      "by": "Benjamin",
+      "cover_url": "https://dead-signal.start.ng/cover.png?v=1792243405",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "orb-rush",
+      "url": "https://orb-rush.start.ng",
+      "by": "Muhammed",
+      "cover_url": "https://orb-rush.start.ng/cover.png?v=1792117172",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "hangout",
+      "url": "https://hangout.start.ng",
+      "by": "start.ng",
+      "cover_url": null,
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "suya-catcher",
+      "url": "https://suya-catcher.start.ng",
+      "by": "Vivian",
+      "cover_url": "https://suya-catcher.start.ng/startng-cover.webp?v=1792106569",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "vault-of-yankari",
+      "url": "https://vault-of-yankari.start.ng",
+      "by": "Lanfear",
+      "cover_url": "https://vault-of-yankari.start.ng/startng-cover.webp?v=1792092200",
+      "description": null,
+      "leaderboard": false
+    },
+    {
+      "name": "relic-hunter",
+      "url": "https://relic-hunter.start.ng",
+      "by": "Chloe",
+      "cover_url": "https://relic-hunter.start.ng/startng-cover.webp?v=1792143190",
+      "description": null,
+      "leaderboard": true
+    },
+    {
+      "name": "lanedash",
+      "url": "https://lanedash.start.ng",
+      "by": "Hamzat",
+      "cover_url": "https://lanedash.start.ng/startng-cover.webp?v=1792085898",
+      "description": null,
+      "leaderboard": false
+    }
+  ],
+  "categories": [
+    {
+      "slug": "endless-runners",
+      "label": "Endless runners",
+      "blurb": "Dash, dodge and keep going",
+      "count": 38,
+      "games": [
+        "relic-rush-3d",
+        "volcano",
+        "glam-dash",
+        "onithsa-market-run",
+        "robot-dodge",
+        "cloud-courier",
+        "ember-dash",
+        "coin-dash-runner",
+        "lagos-bike-rush",
+        "horsebound-endless-derby",
+        "orbital-run",
+        "salone-run",
+        "jemi-game-arcade",
+        "neondrift-arcade",
+        "mango-rush-beta",
+        "star-dash",
+        "zedu-dash",
+        "rooftop-rush",
+        "style-sprint",
+        "agege-rush",
+        "cosmic-dash",
+        "temple-runner",
+        "tesla-skyrun",
+        "lagos-market-run"
+      ]
+    },
+    {
+      "slug": "nigerian-themed",
+      "label": "Nigerian themed",
+      "blurb": "Lagos, jollof, danfo and more",
+      "count": 43,
+      "games": [
+        "lagos-hustle",
+        "sharp-sharp",
+        "onithsa-market-run",
+        "naija-drafts",
+        "ayo-arena",
+        "jollof-catch",
+        "mami",
+        "nepa-light-up-lagos",
+        "naija-quickfire",
+        "lagos-bike-rush",
+        "naija-relic-hunter",
+        "maths-escape",
+        "market-rush-neon",
+        "ile-ere",
+        "naija-roots",
+        "danfo-defense",
+        "puff-puff-catch",
+        "suwe",
+        "naija-market-hustle",
+        "agege-rush",
+        "rain-bucket",
+        "jollof-rush",
+        "danfo-make-way",
+        "jollof-rush-3d"
+      ]
+    },
+    {
+      "slug": "brainy-games",
+      "label": "Brainy games",
+      "blurb": "Think fast, think smart",
+      "count": 25,
+      "games": [
+        "harrington-mystery",
+        "follow-follow",
+        "riftsync",
+        "junction-spirit",
+        "bloom-circuit",
+        "agent-protocol",
+        "naija-drafts",
+        "zobo-sort",
+        "ayo-arena",
+        "the-lost-library",
+        "nepa-light-up-lagos",
+        "pick-me",
+        "maths-escape",
+        "naija-roots",
+        "word-market",
+        "quiz",
+        "bingo",
+        "echo-grid-dan",
+        "suwe",
+        "echo-world-game",
+        "testing-player-pick-me",
+        "danfo-make-way",
+        "arrow-escape",
+        "treasure-isle"
+      ]
+    },
+    {
+      "slug": "space-and-sci-fi",
+      "label": "Space and sci-fi",
+      "blurb": "Stars, orbits and robots",
+      "count": 9,
+      "games": [
+        "nebula-dash",
+        "star-dodge-by-jeffersdoherty",
+        "perihelion",
+        "cosmic-surge",
+        "star-dash",
+        "space-rescue",
+        "star-dash-3d",
+        "cosmic-dash",
+        "star-runner-3d"
+      ]
+    },
+    {
+      "slug": "racing-and-driving",
+      "label": "Racing and driving",
+      "blurb": "Cars, bikes and danfo",
+      "count": 14,
+      "games": [
+        "lagos-hustle",
+        "sharp-sharp",
+        "lagos-bike-rush",
+        "circuit-racer",
+        "turbo-race",
+        "buggy-bash-3d",
+        "ludo",
+        "wheelie-wahala",
+        "dead-signal",
+        "lagos-run",
+        "go-slow-danfo",
+        "along",
+        "alley-velocity",
+        "danfo"
+      ]
+    },
+    {
+      "slug": "catch-and-dodge",
+      "label": "Catch and dodge",
+      "blurb": "Quick, casual, easy to learn",
+      "count": 29,
+      "games": [
+        "starfall-neon-survival",
+        "bounce-game",
+        "coin-rush",
+        "robot-dodge",
+        "sky-courier",
+        "star-dodge-by-jeffersdoherty",
+        "perihelion",
+        "jollof-catch",
+        "bug-escape",
+        "orb-frenzy",
+        "sunshade-dodger",
+        "flying-human",
+        "flappy-run",
+        "star-catcher",
+        "mango-rush",
+        "mango-rush-beta",
+        "gem-dash",
+        "market-rush-neon",
+        "puff-puff-catch",
+        "rain-bucket",
+        "neon-orchard",
+        "coconut-dodge",
+        "lagos-crossing",
+        "coin-dash-arena"
+      ]
+    },
+    {
+      "slug": "ancient-ruins-and-treasure",
+      "label": "Ancient ruins and treasure",
+      "blurb": "Temples, relics and secrets",
+      "count": 8,
+      "games": [
+        "relic-rush-3d",
+        "relic-rush",
+        "naija-relic-hunter",
+        "temple-runner",
+        "orb-temple",
+        "treasure-isle",
+        "relic-hunter",
+        "vault-of-yankari"
+      ]
+    },
+    {
+      "slug": "with-friends",
+      "label": "With friends",
+      "blurb": "Play with people, send a link",
+      "count": 8,
+      "games": [
+        "follow-follow",
+        "orb-rush-mando",
+        "star-dodge-by-jeffersdoherty",
+        "pick-me",
+        "jackpot",
+        "testing-player-pick-me",
+        "arcade-hub",
+        "hangout"
+      ]
+    }
+  ],
+  "challenge": {
+    "day": "2026-10-27",
+    "game": "git-quest",
+    "title": "Git Quest",
+    "cover_url": "https://git-quest.start.ng/cover.png?v=1792265250",
+    "stat": "Total XP",
+    "goal": "10",
+    "ends_at": "2026-10-27T23:00:00Z"
+  },
+  "indie_new": [
+    {
+      "id": 74,
+      "name": "The Plot",
+      "url": "https://theplot.usevale.art/",
+      "by": "AroicX",
+      "cover_url": "https://api.start.ng/indie/74/cover.webp",
+      "description": "Build a life in a vibrant Nigerian neighbourhood. Choose a career, take on jobs, earn game money, meet other players, and make every day your own."
+    },
+    {
+      "id": 73,
+      "name": "Campus Life",
+      "url": "https://campuslife.live",
+      "by": "Trenches",
+      "cover_url": "https://api.start.ng/indie/73/cover.webp",
+      "description": "It’s about university life, writing jamb, choosing preferred course, attending lecture and more."
+    },
+    {
+      "id": 40,
+      "name": "Nairobi Stories",
+      "url": "https://nairobistories.xyz",
+      "by": "Zitrion",
+      "cover_url": "https://api.start.ng/indie/40/cover.webp",
+      "description": "Nairobi lifestyle game"
+    },
+    {
+      "id": 39,
+      "name": "MyGuy",
+      "url": "https://playmyguy.com/?src=startng",
+      "by": "Sava",
+      "cover_url": "https://api.start.ng/indie/39/cover.webp",
+      "description": "MyGuy is your Naija family in your phone. Talk to Mama or Papa and they repeat everything you say in a funny squeaky voice. Poke them, tickle them, cook them j…"
+    },
+    {
+      "id": 38,
+      "name": "Feint Heart",
+      "url": "https://feint.filo.im",
+      "by": "Behruz",
+      "cover_url": "https://api.start.ng/indie/38/cover.webp",
+      "description": "A 1v1 sword duel where reading your rival is everything. Each turn, both duelists secretly pick one of six moves: Slash, Lunge, Block, Parry, Feint or Dodge. E…"
+    },
+    {
+      "id": 37,
+      "name": "RIMCITY",
+      "url": "https://rimcity.app",
+      "by": "Afiémo",
+      "cover_url": "https://api.start.ng/indie/37/cover.webp",
+      "description": "RIMCITY is a Nigerian-born basketball gaming franchise built for the culture, bringing together basketball, gaming, local identity, entertainment and business.…"
+    },
+    {
+      "id": 36,
+      "name": "Danfo Run",
+      "url": "https://danforun.com/?utm_source=startng&utm_medium=creators&utm_campaign=startng_showcase",
+      "by": "Eureka",
+      "cover_url": "https://api.start.ng/indie/36/cover.webp",
+      "description": "Drive a yellow danfo through real Lagos roads: Ojuelegba, Third Mainland Bridge, CMS and more. Pick up passengers, dodge traffic and potholes, and outsmart the…"
+    },
+    {
+      "id": 35,
+      "name": "Àyò Journey",
+      "url": "https://ayoolopon.netlify.app",
+      "by": "Opeyemi",
+      "cover_url": "https://api.start.ng/indie/35/cover.webp",
+      "description": "Àyò Journey is a digital celebration of Àyò (also known as Ayò Olọ́pọ́n), the classic Yoruba seed-sowing board game that belongs to the ancient mancala family…"
+    }
+  ],
+  "indie_popular": [
+    {
+      "id": 5,
+      "name": "Tesla SkyRun",
+      "url": "https://start.ng/approve/4HKzH5-JDOpFQdg0",
+      "by": "Favour",
+      "cover_url": "https://api.start.ng/indie/5/cover.webp",
+      "description": "it is about the tesla flying roadster made by elon musk but just in a normal way and is not something hard"
+    },
+    {
+      "id": 32,
+      "name": "Ọmọ Eko 3D",
+      "url": "https://games.majorgen.com/omo-eko-3d/",
+      "by": "Zekeri",
+      "cover_url": "https://api.start.ng/indie/32/cover.webp",
+      "description": "Ọmọ Eko is a free Lagos platform adventure. \n\nGuide Kuti through Balogun Market as General Blackout tries to switch the city off. \n\nRun and jump across drum pl…"
+    },
+    {
+      "id": 28,
+      "name": "Kingdoms Clash",
+      "url": "https://games.majorgen.com/kingdoms-clash/",
+      "by": "Zekeri",
+      "cover_url": "https://api.start.ng/indie/28/cover.webp",
+      "description": "Kingdoms Clash is a free browser fighting game inspired by Nigerian legends. \n\nChoose Ṣàngó, Queen Idia and other warriors, learn each fighter’s moves, then ba…"
+    },
+    {
+      "id": 74,
+      "name": "The Plot",
+      "url": "https://theplot.usevale.art/",
+      "by": "AroicX",
+      "cover_url": "https://api.start.ng/indie/74/cover.webp",
+      "description": "Build a life in a vibrant Nigerian neighbourhood. Choose a career, take on jobs, earn game money, meet other players, and make every day your own."
+    },
+    {
+      "id": 37,
+      "name": "RIMCITY",
+      "url": "https://rimcity.app",
+      "by": "Afiémo",
+      "cover_url": "https://api.start.ng/indie/37/cover.webp",
+      "description": "RIMCITY is a Nigerian-born basketball gaming franchise built for the culture, bringing together basketball, gaming, local identity, entertainment and business.…"
+    },
+    {
+      "id": 10,
+      "name": "Village People",
+      "url": "https://villagepeople.xyz",
+      "by": "Leslie",
+      "cover_url": "https://api.start.ng/indie/10/cover.webp",
+      "description": "Village People is a social game where you actively plan for the down-fall of all your neighbors as you rise to the top. You can play it on desktop or mobile."
+    },
+    {
+      "id": 29,
+      "name": "Eko Drift",
+      "url": "https://games.majorgen.com/eko-drift/",
+      "by": "Zekeri",
+      "cover_url": "https://api.start.ng/indie/29/cover.webp",
+      "description": "Eko Drift is a free Lagos street-racing game. Race across Lagos-inspired routes, including Third Mainland Bridge, drift through corners and time your boost. Pl…"
+    },
+    {
+      "id": 38,
+      "name": "Feint Heart",
+      "url": "https://feint.filo.im",
+      "by": "Behruz",
+      "cover_url": "https://api.start.ng/indie/38/cover.webp",
+      "description": "A 1v1 sword duel where reading your rival is everything. Each turn, both duelists secretly pick one of six moves: Slash, Lunge, Block, Parry, Feint or Dodge. E…"
+    }
+  ],
+  "tournament": {
+    "starts_at": "2026-10-26T17:00:00Z",
+    "ends_at": "2026-10-27T17:00:00Z",
+    "entrants": 0,
+    "games": [
+      {
+        "name": "coin-dash",
+        "url": "https://coin-dash.start.ng",
+        "cover_url": "https://coin-dash.start.ng/cover.png?v=1792185673",
+        "stats": [
+          "Score"
+        ]
+      },
+      {
+        "name": "alley-velocity",
+        "url": "https://alley-velocity.start.ng",
+        "cover_url": "https://alley-velocity.start.ng/cover.png?v=1792166516",
+        "stats": [
+          "Distance (m)",
+          "Coins"
+        ]
+      },
+      {
+        "name": "bloom-circuit",
+        "url": "https://bloom-circuit.start.ng",
+        "cover_url": "https://bloom-circuit.start.ng/cover.png?v=1792224617",
+        "stats": [
+          "Gardens grown",
+          "Bloom score",
+          "Growing time"
+        ]
+      },
+      {
+        "name": "perihelion",
+        "url": "https://perihelion.start.ng",
+        "cover_url": "https://perihelion.start.ng/cover.png?v=1792239722",
+        "stats": [
+          "Score",
+          "Best multiplier",
+          "Time survived"
+        ]
+      },
+      {
+        "name": "ghost-shift",
+        "url": "https://ghost-shift.start.ng",
+        "cover_url": "https://ghost-shift.start.ng/cover.png?v=1792135759",
+        "stats": [
+          "Score"
+        ]
+      }
+    ]
+  }
+}

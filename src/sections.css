@@ -1,0 +1,1220 @@
+/* The homepage sections after the tournament. Same tokens and moves as the hero:
+   ink borders, lime offset shadows, small tilts, dotted ink lines, the highlighter. */
+
+.sections {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* Full-width bands alternate cream and white (in dark mode: ink and lifted ink)
+   so the page reads as one sequence. The band is painted outside the centred
+   column with an outset border-image, so the markup stays as it is. */
+.sec {
+  --band: var(--bg);
+  padding: 120px 0;
+  scroll-margin-top: 72px;
+  border-image: linear-gradient(var(--band) 0 0) fill 0 / / 0 100vw;
+}
+#challenge,
+#games,
+#about {
+  --band: var(--card);
+}
+
+/* The publishing guide is the page's one ink band, with lime accents.
+   Inside it the tokens flip, so everything in it reads cream on ink. */
+.sec-ink {
+  --band: #292a23;
+  --bg: #292a23;
+  --ink: #f6f5ee;
+  --muted: #b0b1a6;
+  --line: #4a4b41;
+  --card: #33342c;
+  --text-2: #dedcd0;
+  --on-solid: #292a23;
+  --solid-hover: #fff;
+  --dot: rgba(246, 245, 238, 0.12);
+  color: var(--ink);
+}
+:root[data-theme="dark"] .sec-ink {
+  --band: #1f201b;
+  --bg: #1f201b;
+}
+.sec-ink .hl-text {
+  color: var(--lime);
+}
+.sec-ink .hl-bar {
+  top: 0.9em;
+  height: 0.08em;
+}
+
+/* ───────── Section heads (matches the tournament's "01 —" head) ───────── */
+.sec-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.sec-eyebrow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+}
+.sec-num {
+  color: var(--ink);
+  font-weight: 700;
+}
+.sec-rule {
+  width: 44px;
+  height: 1px;
+  background: currentColor;
+}
+.sec-title {
+  margin: 0;
+  font-size: clamp(2.2rem, 5.2vw, 4.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+  text-wrap: balance;
+  -webkit-text-stroke: 0.06em var(--bg);
+  paint-order: stroke fill;
+}
+.hl-wrap {
+  white-space: nowrap;
+}
+/* Headings that share their row with text or art are a size down. */
+.indie .sec-title,
+.about .sec-title,
+.faq .sec-title {
+  font-size: clamp(2.2rem, 4.4vw, 3.8rem);
+}
+.sec-aside {
+  flex: none;
+  padding-bottom: 8px;
+}
+.sec-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 6px;
+  background: linear-gradient(var(--lime), var(--lime)) left 88% / 0% 34% no-repeat;
+  transition: background-size 0.3s var(--ease-out);
+}
+.sec-link:hover {
+  background-size: 100% 34%;
+}
+.sec-link span {
+  transition: transform 0.25s var(--ease-out);
+}
+.sec-link:hover span {
+  transform: translateX(3px);
+}
+.sec-sub {
+  margin: 0;
+  max-width: 34em;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+.sec-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+/* ───────── 02 Daily challenge ───────── */
+.chal-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: center;
+  gap: 48px;
+  padding: 48px;
+  border: 1.5px solid var(--ink);
+  border-radius: 28px;
+  color: var(--ink);
+  text-decoration: none;
+  background:
+    radial-gradient(var(--dot) 1.2px, transparent 1.3px) right 0 top 0 / 18px 18px,
+    linear-gradient(110deg, var(--card) 48%, var(--banner-tint));
+  box-shadow: 8px 8px 0 var(--lime);
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
+}
+.chal-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 11px 11px 0 var(--lime);
+}
+.chal-card:active {
+  transform: translate(4px, 4px);
+  box-shadow: 3px 3px 0 var(--lime);
+  transition-duration: 0.06s;
+}
+.chal-status {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--lime);
+  color: var(--on-lime);
+  letter-spacing: 0.12em;
+}
+.chal-title {
+  font-size: clamp(2rem, 4.6vw, 3.8rem);
+  -webkit-text-stroke: 0;
+}
+.chal-goal {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.14em;
+}
+.chal-goal svg {
+  position: absolute;
+  left: -0.3em;
+  top: -0.2em;
+  width: calc(100% + 0.6em);
+  height: calc(100% + 0.3em);
+  overflow: visible;
+  pointer-events: none;
+}
+.chal-sub {
+  margin: 20px 0 6px;
+  color: var(--muted);
+  font-size: 1.12rem;
+  line-height: 1.6;
+}
+.chal-stat {
+  margin: 0 0 28px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.chal-stat b {
+  color: var(--ink);
+}
+.chal-card:hover .chal-btn {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--lime);
+  background: var(--solid-hover);
+}
+.chal-card .tour-note {
+  margin-top: 16px;
+}
+.chal-art {
+  position: relative;
+}
+.chal-cover {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  border-radius: 18px;
+  border: 1.5px solid var(--ink);
+  overflow: hidden;
+  background: var(--shimmer);
+  rotate: 3deg;
+  box-shadow: 0 18px 32px -18px rgba(41, 42, 35, 0.45);
+  transition: rotate 0.4s var(--ease-out), scale 0.4s var(--ease-out), transform 0.3s var(--ease-out);
+}
+.chal-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-out);
+}
+/* The cover straightens, leans toward the cursor, and its artwork drifts inside the frame. */
+.chal-card:is(:hover, :focus-visible) .chal-cover {
+  rotate: 0deg;
+  scale: 1.02;
+  transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+}
+.chal-card:is(:hover, :focus-visible) .chal-cover img {
+  transform: scale(1.08) translate(calc(var(--px, 0px) * 1.5), calc(var(--py, 0px) * 1.5));
+}
+.chal-ticket {
+  position: absolute;
+  z-index: 2;
+  top: -18px;
+  left: -16px;
+  display: grid;
+  padding: 7px 13px 8px;
+  border-radius: 8px;
+  border: 1.5px solid #292a23;
+  background: var(--lime);
+  color: #292a23;
+  font-family: var(--mono);
+  rotate: -8deg;
+  transition: rotate 0.4s var(--ease-out);
+}
+.chal-ticket span {
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.chal-ticket b {
+  font-size: 0.92rem;
+}
+/* the ticket gets stamped: a short press and a small bounce */
+.chal-card:is(:hover, :focus-visible) .chal-ticket {
+  rotate: -3deg;
+  animation: chal-stamp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes chal-stamp {
+  0% { scale: 1; rotate: -8deg; }
+  30% { scale: 0.9; rotate: -1deg; }
+  100% { scale: 1; rotate: -3deg; }
+}
+
+/* ───────── 03 Categories ───────── */
+.cat-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.cat-link,
+.gc-link {
+  display: block;
+  height: 100%;
+  padding: 8px 8px 14px;
+  border-radius: 18px;
+  border: 1.5px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: 0 1px 0 var(--line), 0 12px 24px -16px rgba(41, 42, 35, 0.35);
+  transition: transform 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out), border-color 0.2s;
+}
+/* Cards lift and lean a touch, alternating sides, like a hand of cards being fanned. */
+.cat-link:hover,
+.cat-link:focus-visible,
+.gc-link:hover,
+.gc-link:focus-visible {
+  /* --rx/--ry come from usePointerLean: the card leans a touch toward the cursor */
+  transform: perspective(900px) translateY(-4px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) rotate(-0.6deg);
+  border-color: var(--ink);
+  box-shadow: 6px 8px 0 var(--lime);
+}
+.cat:nth-child(even) .cat-link:hover,
+.cat:nth-child(even) .cat-link:focus-visible,
+.gc:nth-child(even) .gc-link:hover,
+.gc:nth-child(even) .gc-link:focus-visible {
+  transform: perspective(900px) translateY(-4px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) rotate(0.6deg);
+}
+.cat-art,
+.gc-art {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--shimmer);
+  border: 1px solid var(--line);
+}
+.cat-art {
+  aspect-ratio: 16 / 11;
+}
+.gc-art {
+  aspect-ratio: 16 / 10;
+}
+.cat-art img,
+.gc-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s var(--ease-out);
+}
+/* the artwork zooms a little and drifts against the lean (--px/--py), so it feels deep */
+.cat-pan {
+  display: block;
+  height: 100%;
+  transition: transform 0.45s var(--ease-out);
+}
+.cat-link:is(:hover, :focus-visible) .cat-pan,
+.gc-link:is(:hover, :focus-visible) .gc-art img {
+  transform: scale(1.07) translate(var(--px, 0px), var(--py, 0px));
+}
+.cat-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 6px 0;
+}
+.cat-label b {
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+.cat-count {
+  flex: none;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+.cat-blurb {
+  display: block;
+  padding: 3px 6px 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* ───────── 04 Community games ───────── */
+.shelf-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-bottom: 26px;
+}
+.shelf-switch {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+.shelf-btn {
+  position: relative;
+  padding: 9px 16px;
+  min-height: 40px;
+  border: 0;
+  border-radius: 9px;
+  background: none;
+  color: var(--muted);
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.shelf-btn:hover {
+  color: var(--ink);
+}
+.shelf-btn[aria-pressed="true"] {
+  color: var(--on-lime);
+}
+.shelf-btn span {
+  position: relative;
+}
+.shelf-btn .shelf-pill {
+  position: absolute;
+  inset: 0;
+  border-radius: 9px;
+  background: var(--lime);
+  box-shadow: inset 0 0 0 1.5px #292a23;
+}
+.shelf-note {
+  margin: 0;
+  color: var(--muted);
+}
+.gc-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.gc-fallback {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: var(--banner-tint);
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.gc-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--lime);
+  color: #292a23;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+.gc-info {
+  display: grid;
+  gap: 3px;
+  padding: 12px 6px 0;
+  min-width: 0;
+}
+.gc-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.gc-by {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.gc-desc {
+  margin-top: 4px;
+  color: var(--text-2);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.gc-host {
+  margin-top: 4px;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.see-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+/* A to Z */
+.az {
+  margin-top: 32px;
+  border: 1.5px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+  transition: border-color 0.2s;
+}
+.az[open],
+.az:hover {
+  border-color: var(--ink);
+}
+.az summary,
+.faq-item summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+.az summary::-webkit-details-marker,
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.az summary {
+  padding: 20px 24px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+}
+.az-count {
+  color: var(--muted);
+  font-weight: 600;
+}
+/* A plus that turns into a minus. */
+.az-icon,
+.faq-icon {
+  position: relative;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid var(--line);
+  transition: background-color 0.25s, border-color 0.25s, rotate 0.35s var(--ease-out);
+}
+.az-icon::before,
+.az-icon::after,
+.faq-icon::before,
+.faq-icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 2px;
+  margin: -1px 0 0 -6px;
+  border-radius: 1px;
+  background: var(--ink);
+  transition: rotate 0.35s var(--ease-out), background-color 0.25s;
+}
+.az-icon::after,
+.faq-icon::after {
+  rotate: 90deg;
+}
+.az[open] .az-icon,
+.faq-item[open] .faq-icon {
+  background: var(--lime);
+  border-color: #292a23;
+  rotate: 180deg;
+}
+.az[open] .az-icon::before,
+.az[open] .az-icon::after,
+.faq-item[open] .faq-icon::before,
+.faq-item[open] .faq-icon::after {
+  background: #292a23;
+}
+.az[open] .az-icon::after,
+.faq-item[open] .faq-icon::after {
+  rotate: 0deg;
+}
+.az-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 24px 18px;
+  border-bottom: 1px solid var(--line);
+}
+.az-jump a {
+  display: grid;
+  place-items: center;
+  min-width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s var(--ease-out);
+}
+.az-jump a:hover {
+  background: var(--lime);
+  border-color: #292a23;
+  color: #292a23;
+  transform: translateY(-2px);
+}
+.az-groups {
+  columns: 4 200px;
+  column-gap: 32px;
+  padding: 22px 24px 28px;
+}
+.az[open] .az-groups,
+.faq-item[open] > p {
+  animation: open-in 0.35s var(--ease-out);
+}
+@keyframes open-in {
+  from {
+    opacity: 0;
+    translate: 0 -4px;
+  }
+}
+.az-group {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  scroll-margin-top: 90px;
+}
+.az-letter {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: var(--lime);
+  color: #292a23;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+.az-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.az-group li {
+  padding: 3px 0;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+.az-group a {
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+  background: linear-gradient(var(--lime), var(--lime)) left 88% / 0% 34% no-repeat;
+  transition: background-size 0.25s var(--ease-out);
+}
+.az-group a:hover {
+  background-size: 100% 34%;
+}
+.az-group li span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+/* ───────── 05 Independent creators ───────── */
+/* Open and editorial: text on the band, the hand of covers resting on a patch of dots. */
+.indie {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: 56px;
+}
+.indie .sec-head {
+  margin-bottom: 20px;
+}
+.indie-hand {
+  position: relative;
+  isolation: isolate;
+  height: 360px;
+}
+.indie-hand::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -14% -8%;
+  background: radial-gradient(var(--dot) 1.2px, transparent 1.3px) 0 0 / 18px 18px;
+  -webkit-mask-image: radial-gradient(closest-side, #000 40%, transparent);
+  mask-image: radial-gradient(closest-side, #000 40%, transparent);
+}
+.indie-tile {
+  position: absolute;
+  width: 64%;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  border: 1.5px solid var(--ink);
+  overflow: hidden;
+  background: var(--shimmer);
+  box-shadow: 0 14px 30px -12px rgba(41, 42, 35, 0.35);
+  /* rotate/translate/scale stack with Motion's own transform */
+  transition: rotate 0.35s var(--ease-out), translate 0.35s var(--ease-out), scale 0.35s var(--ease-out),
+    box-shadow 0.25s var(--ease-out);
+}
+.indie-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.indie-tile.t0 {
+  z-index: 3;
+  left: 2%;
+  top: 10%;
+  rotate: -6deg;
+}
+.indie-tile.t1 {
+  z-index: 2;
+  right: 0;
+  top: 0;
+  rotate: 5deg;
+}
+.indie-tile.t2 {
+  z-index: 1;
+  left: 24%;
+  bottom: 0;
+  rotate: 2deg;
+}
+.indie-tile:hover,
+.indie-tile:focus-visible {
+  z-index: 4;
+  rotate: 0deg;
+  translate: 0 -6px;
+  scale: 1.03;
+  box-shadow: 6px 8px 0 var(--lime);
+}
+.indie-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1.5px solid #292a23;
+  background: var(--lime);
+  color: #292a23;
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  rotate: -4deg;
+}
+.sub-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 56px 0 20px;
+}
+.sub-head h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+/* ───────── 06 Publishing guide ───────── */
+.steps-wrap {
+  position: relative;
+}
+.steps-thread {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 100%;
+  height: 40px;
+  overflow: visible;
+}
+.steps {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+/* Wide screens: the section pins and the steps play out across its scroll. */
+.how.is-pinned {
+  height: 230vh;
+  padding: 0;
+}
+.how.is-pinned .how-stage {
+  position: sticky;
+  top: 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 96px 0 56px;
+}
+.steps-vline {
+  display: none;
+}
+/* Steps wait, dimmed, until the dotted line reaches them. */
+.step {
+  opacity: 0.45;
+  transition: opacity 0.5s var(--ease-out);
+}
+.step.is-reached {
+  opacity: 1;
+}
+.step-num {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 1.5px dashed var(--muted);
+  background: var(--bg);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  rotate: -4deg;
+  transition: rotate 0.3s var(--ease-out), background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.step:nth-child(even) .step-num {
+  rotate: 3deg;
+}
+.step.is-reached .step-num {
+  border: 1.5px solid #292a23;
+  background: var(--lime);
+  color: #292a23;
+  animation: step-land 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes step-land {
+  from {
+    scale: 0.7;
+  }
+}
+.step:hover .step-num {
+  rotate: 0deg;
+}
+.step h3 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+  letter-spacing: -0.03em;
+}
+.step p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.step code {
+  white-space: nowrap;
+}
+
+/* ───────── 07 About and 08 FAQ: head on the left, text on the right ───────── */
+.about,
+.faq {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 48px;
+  align-items: start;
+}
+.about .sec-head,
+.faq .sec-head {
+  margin: 0;
+}
+.faq .sec-head {
+  position: sticky;
+  top: 100px;
+}
+.about-body p {
+  margin: 0 0 20px;
+  color: var(--text-2);
+  font-size: clamp(1.12rem, 1.7vw, 1.35rem);
+  line-height: 1.6;
+}
+.about-body .sec-link {
+  margin-top: 6px;
+}
+.peek {
+  position: relative;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+  background: linear-gradient(var(--lime), var(--lime)) left 90% / 100% 30% no-repeat;
+  transition: background-size 0.25s var(--ease-out);
+}
+.peek:hover,
+.peek:focus-visible {
+  background-size: 100% 85%;
+}
+.peek-card {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  translate: -50% 0;
+  width: 220px;
+  padding: 6px 6px 9px;
+  border-radius: 14px;
+  border: 1.5px solid var(--ink);
+  background: var(--card);
+  box-shadow: 6px 8px 0 var(--lime);
+  pointer-events: none;
+}
+.peek-card img {
+  background: var(--shimmer);
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.peek-card span {
+  display: block;
+  padding: 7px 4px 0;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.peek-card em {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.faq-item {
+  border-bottom: 1.5px solid var(--line);
+}
+.faq-item:first-child {
+  border-top: 1.5px solid var(--line);
+}
+.faq-item summary {
+  padding: 22px 4px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.faq-item summary > span:first-child {
+  background: linear-gradient(var(--lime), var(--lime)) left 88% / 0% 34% no-repeat;
+  transition: background-size 0.3s var(--ease-out);
+}
+.faq-item summary:hover > span:first-child {
+  background-size: 100% 34%;
+}
+.faq-item p {
+  margin: 0;
+  padding: 0 52px 24px 4px;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+/* ───────── Footer ───────── */
+.foot {
+  padding: 64px 24px 112px;
+  border-top: 1px solid var(--line);
+  background: var(--card);
+}
+.foot-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  /* lines up with the sections' content edge (1180 minus their 24px padding) */
+  max-width: 1132px;
+  margin: 0 auto;
+}
+.foot-logo {
+  display: inline-block;
+}
+.foot-brand p {
+  max-width: 26em;
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.foot-col h2 {
+  margin: 4px 0 14px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.foot-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.foot-col li {
+  margin-bottom: 4px;
+}
+.foot-col a {
+  display: inline-block;
+  padding: 4px 0;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.foot-col a span {
+  background: linear-gradient(var(--lime), var(--lime)) left 88% / 0% 34% no-repeat;
+  transition: background-size 0.3s var(--ease-out);
+}
+.foot-col a:hover span {
+  background-size: 100% 34%;
+}
+.foot-base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 32px;
+  max-width: 1132px;
+  margin: 48px auto 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.foot-base p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.foot-concept {
+  max-width: 40em;
+}
+
+/* The floating badge and scroll button are ink; a faint cream ring keeps
+   their shape when they pass over the ink band. */
+.concept-badge,
+.scroll-btn {
+  outline: 1px solid rgba(246, 245, 238, 0.22);
+  outline-offset: -1px;
+}
+
+/* ───────── Tablet ───────── */
+@media (max-width: 1100px) {
+  .gc-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 40px;
+  }
+  .steps-thread {
+    display: none;
+  }
+}
+
+/* ───────── Mobile ───────── */
+@media (max-width: 860px) {
+  .sections {
+    padding: 0 16px;
+  }
+  .sec {
+    padding: 80px 0;
+  }
+  .sec-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .sec-eyebrow {
+    font-size: 0.64rem;
+    letter-spacing: 0.16em;
+    margin-bottom: 14px;
+  }
+  .sec-rule {
+    width: 24px;
+  }
+  .sec-title {
+    font-size: clamp(2rem, 9.5vw, 3rem);
+  }
+  .sec-sub {
+    font-size: 1.04rem;
+  }
+
+  .chal-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    padding: 28px 22px 26px;
+    border-radius: 22px;
+    box-shadow: 6px 6px 0 var(--lime);
+  }
+  .chal-art {
+    order: -1;
+    margin: 10px 8px 0;
+  }
+  .chal-title {
+    font-size: clamp(1.9rem, 8.6vw, 2.6rem);
+  }
+  .chal-btn {
+    width: 100%;
+  }
+
+  .cat-grid,
+  .gc-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .cat-link,
+  .gc-link {
+    padding: 6px 6px 12px;
+    border-radius: 14px;
+  }
+  .cat-art,
+  .gc-art {
+    border-radius: 9px;
+  }
+  .cat-label {
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 4px 0;
+  }
+  .cat-label b,
+  .gc-title {
+    font-size: 0.95rem;
+  }
+  .cat-blurb {
+    display: none;
+  }
+  .gc-info {
+    padding: 10px 4px 0;
+  }
+  .gc-by {
+    font-size: 0.8rem;
+  }
+  .gc-desc {
+    display: none;
+  }
+
+  .az summary {
+    padding: 18px;
+    font-size: 1rem;
+  }
+  .az-jump {
+    padding: 0 18px 16px;
+  }
+  .az-jump a {
+    min-width: 32px;
+    height: 32px;
+  }
+  .az-groups {
+    columns: 2 140px;
+    column-gap: 20px;
+    padding: 20px 18px 24px;
+  }
+
+  .indie {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+  .indie-hand {
+    height: 230px;
+  }
+  .sub-head {
+    margin-top: 44px;
+  }
+  .sub-head h3 {
+    font-size: 1.2rem;
+  }
+
+  .steps {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 28px;
+  }
+  /* the dotted line runs down the side on small screens, drawing as you scroll */
+  .steps-vline {
+    display: block;
+    position: absolute;
+    left: 21px;
+    top: 30px;
+    bottom: 30px;
+    border-left: 2.6px dotted var(--lime);
+    transform-origin: top;
+  }
+  .step {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    column-gap: 16px;
+  }
+  .step-num {
+    grid-row: span 2;
+    margin: 0;
+    position: relative;
+  }
+  .step code {
+    white-space: normal;
+  }
+
+  .about,
+  .faq {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .faq .sec-head {
+    position: static;
+  }
+  .faq-item summary {
+    font-size: 1.04rem;
+    padding: 18px 2px;
+  }
+  .faq-item p {
+    padding-right: 8px;
+  }
+  .peek-card {
+    width: 170px;
+  }
+
+  .foot {
+    padding: 48px 16px 100px;
+  }
+  .foot-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 32px;
+  }
+  .foot-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chal-card:hover,
+  .cat-link:hover,
+  .gc-link:hover,
+  .chal-card:hover .chal-btn,
+  .az-jump a:hover {
+    transform: none;
+  }
+  .chal-card:hover .chal-cover,
+  .indie-tile:hover {
+    rotate: none;
+    translate: none;
+    scale: none;
+  }
+}

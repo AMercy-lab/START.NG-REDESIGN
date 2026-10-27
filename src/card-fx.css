@@ -1,0 +1,497 @@
+/* Game-card illustrations (CardFx). Hidden until the card is hovered or focused,
+   then each plays once with a small overshoot and holds its last pose.
+   Fixed brand colours, because they sit on cover art in both themes. */
+
+.fx {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.fx * {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.gc-link:is(:hover, :focus-visible) .fx {
+  opacity: 1;
+}
+
+.fx-sticker {
+  filter: drop-shadow(2.5px 2.5px 0 #d8fd71);
+}
+.fx-disc {
+  fill: #fffefa;
+  stroke: #292a23;
+  stroke-width: 2;
+}
+.fx-lime,
+.fx-cream {
+  fill: #d8fd71;
+  stroke: #292a23;
+  stroke-width: 1.8;
+  stroke-linejoin: round;
+}
+.fx-cream {
+  fill: #fffefa;
+}
+.fx-ink {
+  fill: #292a23;
+}
+.fx-line,
+.fx-thin,
+.fx-ring,
+.fx-trail {
+  fill: none;
+  stroke: #292a23;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.fx-thin,
+.fx-ring {
+  stroke-width: 1.7;
+}
+.fx-trail {
+  stroke-width: 2;
+  stroke-dasharray: 0.1 4;
+}
+.fx-draw {
+  stroke-dasharray: 1;
+}
+
+/* Every illustration's sticker pops in first. */
+.gc-link:is(:hover, :focus-visible) .fx-sticker {
+  animation: fx-pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@keyframes fx-pop {
+  from {
+    transform: scale(0.4) rotate(-14deg);
+  }
+}
+
+/* Shared pieces */
+@keyframes fx-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fx-wipe {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes fx-pop-in {
+  0% {
+    transform: scale(0) translateY(4px);
+  }
+  70% {
+    transform: scale(1.18) translateY(-1px);
+  }
+  100% {
+    transform: none;
+  }
+}
+.gc-link:is(:hover, :focus-visible) .fx-draw {
+  animation: fx-draw 0.6s ease-out 0.2s both;
+}
+.gc-link:is(:hover, :focus-visible) .fx-late {
+  animation-delay: 0.38s;
+}
+.gc-link:is(:hover, :focus-visible) .fx-wipe {
+  animation: fx-wipe 0.55s ease-out 0.2s both;
+}
+
+/* Board and card: the top card fans out from the stack. */
+.fx-cards .fx-a,
+.fx-cards .fx-b {
+  transform-origin: 50% 100%;
+}
+.gc-link:is(:hover, :focus-visible) .fx-cards .fx-a {
+  animation: fx-fan-l 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both;
+}
+.gc-link:is(:hover, :focus-visible) .fx-cards .fx-b {
+  animation: fx-fan-r 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both;
+}
+@keyframes fx-fan-l {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(-3px) rotate(-16deg);
+  }
+}
+@keyframes fx-fan-r {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateX(3px) rotate(14deg);
+  }
+}
+
+/* Sports: the ball drops and bounces twice. */
+.gc-link:is(:hover, :focus-visible) .fx-ball .fx-a {
+  animation: fx-bounce 0.9s ease-in 0.1s both;
+}
+@keyframes fx-bounce {
+  0% { transform: translateY(-20px); animation-timing-function: ease-in; }
+  38% { transform: translateY(0) scale(1.08, 0.88); animation-timing-function: ease-out; }
+  58% { transform: translateY(-7px); animation-timing-function: ease-in; }
+  76% { transform: translateY(0) scale(1.04, 0.95); animation-timing-function: ease-out; }
+  88% { transform: translateY(-2px); animation-timing-function: ease-in; }
+  100% { transform: none; }
+}
+
+/* Space: the ring draws and a moon swings into place. */
+.gc-link:is(:hover, :focus-visible) .fx-space .fx-a {
+  animation: fx-orbit 0.8s cubic-bezier(0.34, 1.4, 0.64, 1) 0.2s both;
+}
+@keyframes fx-orbit {
+  0% { transform: translate(24px, 16px) scale(0.5); opacity: 0; }
+  40% { opacity: 1; }
+  100% { transform: none; }
+}
+
+/* Racing: speed lines whip past and the bus bumps forward. */
+.gc-link:is(:hover, :focus-visible) .fx-race .fx-a {
+  animation: fx-bump 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both;
+}
+.gc-link:is(:hover, :focus-visible) .fx-race .fx-c,
+.gc-link:is(:hover, :focus-visible) .fx-runner .fx-c {
+  animation: fx-streak 0.6s ease-out 0.15s both;
+}
+@keyframes fx-bump {
+  0% { transform: translateX(-10px); }
+  70% { transform: translateX(2px) translateY(-1.5px); }
+  100% { transform: none; }
+}
+@keyframes fx-streak {
+  from { transform: translateX(12px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+/* Action: crosshairs close in, then the centre lights. */
+.gc-link:is(:hover, :focus-visible) .fx-aim .fx-a {
+  animation: fx-close-in 0.6s cubic-bezier(0.34, 1.4, 0.64, 1) 0.1s both;
+}
+.gc-link:is(:hover, :focus-visible) .fx-aim .fx-b {
+  animation: fx-pop-in 0.4s ease-out 0.55s both;
+}
+@keyframes fx-close-in {
+  from { transform: scale(1.8) rotate(-40deg); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+/* Platformers: a block hops from ledge to ledge. */
+.gc-link:is(:hover, :focus-visible) .fx-hop .fx-a {
+  animation: fx-hop 0.75s ease-in-out 0.15s both;
+}
+@keyframes fx-hop {
+  0% { transform: none; }
+  15% { transform: scale(1.15, 0.8); }
+  55% { transform: translate(10px, -14px) rotate(90deg); }
+  85% { transform: translate(20px, 0) rotate(180deg) scale(1.15, 0.85); }
+  100% { transform: translate(20px, 0) rotate(180deg); }
+}
+
+/* Food: steam curls up from the pot (uses fx-draw). */
+
+/* Treasure: the dotted trail leads to a gem (uses fx-wipe). */
+.gc-link:is(:hover, :focus-visible) .fx-treasure .fx-b {
+  animation: fx-pop-in 0.45s ease-out 0.6s both;
+}
+
+/* Coins: three pop up, one after another. */
+.gc-link:is(:hover, :focus-visible) .fx-coins :is(.fx-a, .fx-b, .fx-c) {
+  animation: fx-coin 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+.gc-link:is(:hover, :focus-visible) .fx-coins .fx-a { animation-delay: 0.12s; }
+.gc-link:is(:hover, :focus-visible) .fx-coins .fx-b { animation-delay: 0.24s; }
+.gc-link:is(:hover, :focus-visible) .fx-coins .fx-c { animation-delay: 0.36s; }
+@keyframes fx-coin {
+  from { transform: translateY(10px) scale(0.4); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+/* Catch and dodge: something drops into the bowl, which dips. */
+.gc-link:is(:hover, :focus-visible) .fx-catch .fx-a {
+  animation: fx-fall 0.55s ease-in 0.1s both;
+}
+.gc-link:is(:hover, :focus-visible) .fx-catch .fx-b {
+  animation: fx-dip 0.35s ease-out 0.62s both;
+}
+@keyframes fx-fall {
+  from { transform: translateY(-22px); }
+  to { transform: translateY(3px); }
+}
+@keyframes fx-dip {
+  50% { transform: translateY(2.5px); }
+}
+
+/* Brainy: the bulb lights with a little bounce. */
+.gc-link:is(:hover, :focus-visible) .fx-brainy .fx-b {
+  animation: fx-light 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both;
+}
+.gc-link:is(:hover, :focus-visible) .fx-brainy .fx-c {
+  animation: fx-pop-in 0.4s ease-out 0.45s both;
+}
+@keyframes fx-light {
+  from { transform: scale(0.82); fill: #fffefa; }
+  to { transform: none; fill: #d8fd71; }
+}
+
+/* Endless runners: a dash streaks in and settles. */
+.gc-link:is(:hover, :focus-visible) .fx-runner .fx-a {
+  animation: fx-dash 0.6s cubic-bezier(0.34, 1.4, 0.64, 1) 0.1s both;
+}
+@keyframes fx-dash {
+  from { transform: translateX(-22px) scaleX(1.6); }
+  to { transform: none; }
+}
+
+/* Nigerian themed: bunting drops in and sways once. */
+.fx-naija .fx-a {
+  transform-origin: 50% 0;
+}
+.gc-link:is(:hover, :focus-visible) .fx-naija .fx-a {
+  animation: fx-sway 0.9s ease-out 0.1s both;
+}
+@keyframes fx-sway {
+  0% { transform: translateY(-12px) rotate(-6deg); opacity: 0; }
+  45% { transform: translateY(1px) rotate(4deg); opacity: 1; }
+  75% { transform: rotate(-2deg); }
+  100% { transform: none; }
+}
+
+/* Everything else: a sparkle draws itself and turns. */
+.gc-link:is(:hover, :focus-visible) .fx-spark .fx-a {
+  animation: fx-twinkle 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both;
+}
+.gc-link:is(:hover, :focus-visible) .fx-spark .fx-b {
+  animation: fx-pop-in 0.35s ease-out 0.45s both;
+}
+@keyframes fx-twinkle {
+  from { transform: scale(0) rotate(-90deg); }
+  to { transform: none; }
+}
+
+/* ───────── Shared response for every game and category card ─────────
+   1. lean toward the cursor, artwork drifts (sections.css, with usePointerLean)
+   2. a soft light follows the cursor across the artwork
+   3. a lime highlighter sweeps under the name
+   4. the card's own one-off reaction (stickers above, categories and challenge below)
+   5. pressing sinks it into its lime shadow */
+
+.gc-art::before,
+.cat-art::before,
+.chal-cover::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 30%), rgba(255, 254, 250, 0.32), transparent 55%);
+  transition: opacity 0.35s;
+}
+.gc-link:is(:hover, :focus-visible) .gc-art::before,
+.cat-link:is(:hover, :focus-visible) .cat-art::before,
+.chal-card:is(:hover, :focus-visible) .chal-cover::before {
+  opacity: 1;
+}
+
+.gc-title,
+.cat-label b span {
+  background: linear-gradient(var(--lime), var(--lime)) left 90% / 0% 32% no-repeat;
+  transition: background-size 0.35s var(--ease-out);
+}
+/* only as wide as the words (titles ellipsize, so they stay one line) */
+.gc-title {
+  justify-self: start;
+  max-width: 100%;
+}
+/* category names can wrap; each line gets its own stroke */
+.cat-label b span {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.gc-link:is(:hover, :focus-visible) .gc-title,
+.cat-link:is(:hover, :focus-visible) .cat-label b span {
+  background-size: 100% 32%;
+}
+.cat-count {
+  padding: 1px 6px;
+  border-radius: 4px;
+  transition: background-color 0.25s, color 0.25s;
+}
+.cat-link:is(:hover, :focus-visible) .cat-count {
+  background: var(--lime);
+  color: #292a23;
+}
+
+.gc-link:active,
+.gc:nth-child(even) .gc-link:active,
+.cat-link:active,
+.cat:nth-child(even) .cat-link:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 var(--lime);
+  transition-duration: 0.06s;
+}
+
+/* ───────── Categories: each artwork answers in its own way, once ───────── */
+.cat-pan img {
+  transform-origin: 50% 60%;
+}
+.cat-endless-runners .cat-link:is(:hover, :focus-visible) img {
+  animation: cat-stride 0.8s cubic-bezier(0.34, 1.3, 0.64, 1);
+}
+.cat-racing-and-driving .cat-link:is(:hover, :focus-visible) img {
+  animation: cat-rush 0.7s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+.cat-catch-and-dodge .cat-link:is(:hover, :focus-visible) img {
+  animation: cat-drop 0.8s ease-out;
+}
+.cat-space-and-sci-fi .cat-link:is(:hover, :focus-visible) img {
+  animation: cat-drift 1s ease-in-out;
+}
+.cat-brainy-games .cat-link:is(:hover, :focus-visible) img {
+  animation: cat-switch-on 0.7s ease-out;
+}
+.cat-ancient-ruins-and-treasure .cat-link:is(:hover, :focus-visible) img {
+  animation: cat-torch 0.9s ease-in-out;
+}
+.cat-with-friends .cat-link:is(:hover, :focus-visible) img {
+  animation: cat-cheer 0.8s ease-in-out;
+}
+/* Nigerian themed: warm light sweeps across the street scene */
+.cat-nigerian-themed .cat-art::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 236, 170, 0.45) 50%, transparent 65%) no-repeat;
+  background-size: 250% 100%;
+  background-position: 120% 0;
+  opacity: 0;
+}
+.cat-nigerian-themed .cat-link:is(:hover, :focus-visible) .cat-art::after {
+  animation: cat-sun 0.95s ease-out;
+}
+
+@keyframes cat-stride {
+  0% { transform: none; }
+  35% { transform: translateX(-4%); }
+  70% { transform: translateX(1%); }
+}
+@keyframes cat-rush {
+  0% { transform: none; }
+  40% { transform: scale(1.1) translateY(-1%); }
+  60% { transform: scale(1.05) translateX(0.6%); }
+  80% { transform: scale(1.06) translateX(-0.4%); }
+}
+@keyframes cat-drop {
+  0% { transform: translateY(-5%); }
+  45% { transform: translateY(2%); }
+  70% { transform: translateY(-1%); }
+  100% { transform: none; }
+}
+@keyframes cat-drift {
+  50% { transform: translateY(-2.5%) rotate(-1.2deg) scale(1.03); }
+}
+@keyframes cat-switch-on {
+  0% { filter: brightness(0.8); }
+  35% { filter: brightness(1.25) saturate(1.15); transform: scale(1.03); }
+  100% { filter: none; }
+}
+@keyframes cat-torch {
+  0% { filter: brightness(0.75); }
+  25% { filter: brightness(1.15); }
+  45% { filter: brightness(0.92); }
+  70% { filter: brightness(1.1); }
+  100% { filter: none; }
+}
+@keyframes cat-cheer {
+  25% { transform: rotate(-1.4deg) scale(1.03); }
+  55% { transform: rotate(1.1deg) scale(1.03); }
+  80% { transform: rotate(-0.4deg); }
+}
+@keyframes cat-sun {
+  0% { opacity: 1; background-position: 120% 0; }
+  100% { opacity: 1; background-position: -20% 0; }
+}
+
+/* ───────── Daily challenge ───────── */
+/* a lime pen goes round the goal again, under the ink circle */
+.chal-goal-lime {
+  fill: none;
+  stroke: var(--lime);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.chal-card:is(:hover, :focus-visible) .chal-goal-lime {
+  animation: fx-draw 0.6s ease-out 0.1s both;
+}
+/* three sparkles slip out of the cover's top corner and fade */
+.chal-sparks {
+  position: absolute;
+  z-index: 3;
+  top: -22px;
+  right: -26px;
+  width: 80px;
+  height: 80px;
+  overflow: visible;
+  pointer-events: none;
+}
+.chal-spark {
+  fill: #d8fd71;
+  stroke: #292a23;
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+}
+.chal-spark.s0 { --dx: 6px; --dy: -10px; translate: 30px 34px; }
+.chal-spark.s1 { --dx: 16px; --dy: 4px; translate: 46px 40px; scale: 0.7; }
+.chal-spark.s2 { --dx: -4px; --dy: -16px; translate: 22px 46px; scale: 0.55; }
+.chal-card:is(:hover, :focus-visible) .chal-spark {
+  animation: chal-spark 1.1s cubic-bezier(0.34, 1.4, 0.64, 1) both;
+}
+.chal-card:is(:hover, :focus-visible) .chal-spark.s1 { animation-delay: 0.08s; }
+.chal-card:is(:hover, :focus-visible) .chal-spark.s2 { animation-delay: 0.16s; }
+@keyframes chal-spark {
+  0% { opacity: 0; transform: scale(0) rotate(-60deg); }
+  25% { opacity: 1; }
+  55% { opacity: 1; transform: translate(var(--dx), var(--dy)) scale(1) rotate(0deg); }
+  100% { opacity: 0; transform: translate(calc(var(--dx) * 1.4), calc(var(--dy) * 1.4)) scale(0.8) rotate(20deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* the global rule ends every animation instantly, so stickers show their final pose;
+     movement-only reactions are switched off */
+  .gc-link:active,
+  .cat-link:active,
+  .chal-card:active,
+  .cat-link:is(:hover, :focus-visible) .cat-pan,
+  .gc-link:is(:hover, :focus-visible) .gc-art img,
+  .chal-card:is(:hover, :focus-visible) .chal-cover img {
+    transform: none;
+  }
+  .chal-spark {
+    display: none;
+  }
+}

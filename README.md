@@ -2,7 +2,7 @@
 
 An unofficial, independent concept for a livelier start.ng homepage. It is not affiliated with start.ng and does not change the live site. Every game, sign-in and tournament link goes to the real start.ng.
 
-This prototype covers two sections only: the **hero** and **today's tournament**.
+It covers the whole homepage: the **hero**, **today's tournament**, the **daily challenge**, **categories**, **games from the community** (most played, new this week, and every game A to Z), **independent creators**, the **publishing guide**, **About**, **FAQ** and the **footer**. The wording is start.ng's own.
 
 ## Run it
 
@@ -16,7 +16,8 @@ npm run dev        # http://localhost:5173
 ## Where the data comes from
 
 - **Games, covers, creators:** `api.start.ng/games` and the most-played shelf (`/discover/shelves`), saved at build time.
-- **Today's tournament:** fetched live from `/tournaments/current` through the `/sng` proxy (Vite in dev, a Vercel rewrite in production). If that fails, the saved line-up is shown and labelled as saved, with no countdown or player count.
+- **Categories, shelves, independent creators:** `/tags`, `/discover/shelves` and `/indie`, saved at build time. Category art loads from start.ng's own `/category-art/`.
+- **Today's tournament and daily challenge:** fetched live from `/tournaments/current` and `/spotlight` through the `/sng` proxy (Vite in dev and preview, a Vercel rewrite in production). If that fails, the saved data is shown and labelled as saved.
 - Titles are built from game names the same way start.ng does (`lagos-bike-rush` → `Lagos Bike Rush`).
 
 ## Deploy to Vercel

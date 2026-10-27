@@ -9,10 +9,14 @@
     <meta name="description" content="An unofficial concept redesign of the start.ng homepage. Every game links to the real start.ng." />
     <title>start.ng · concept redesign</title>
     <script>
+      // Light (start.ng's cream) for first-time visitors; dark only once someone picks it.
+      let theme = 'light';
       try {
-        const t = localStorage.getItem('sng-theme');
-        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+        const saved = localStorage.getItem('sng-theme');
+        if (saved === 'dark' || saved === 'light') theme = saved;
       } catch {}
+      document.documentElement.dataset.theme = theme;
+      if (theme === 'dark') document.querySelector('meta[name="theme-color"]').content = '#292a23';
     </script>
   </head>
   <body>
